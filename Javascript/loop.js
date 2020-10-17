@@ -53,3 +53,22 @@ for(var i=0; i<1; i++) {
       console.log(i+''+j);
    }
 }
+
+// ======================================================
+
+// Program 4
+// Table
+// 5 x 1 = 5
+function printTable(number) {
+   var i = 10;
+   for(i; i >= 1; i-= 2) {
+   console.log(number + " x " + i + " = " + number*i)
+   }
+} 
+
+function getUserInputForTableProgram() {
+   var userInput = prompt("Enter Any Number ?", 2);
+   printTable(userInput);
+}
+
+// getUserInputForTableProgram(); //Uncomment to Run that function 
