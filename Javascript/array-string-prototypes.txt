@@ -1,0 +1,45 @@
+Array Prototypes
+---------------------
+length
+push
+pop
+unshift
+shift
+splice
+find
+filter
+forEach
+map
+concat
+isArray
+from
+reverse
+join
+inlcudes
+indexof
+
+String Prototypes
+----------------------
+length
+charAt
+toUpperCase
+toLowerCase
+trim
+trimStart
+trimEnd
+startsWith
+endsWith
+split
+replace
+substr
+slice
+concat
+
+========================
+Callback Functions
+------------------------
+
+Syncrhonous/Asynchronous
+------------------------------------
+Event Loop Example GIF
+https://medium.com/@ankitkamboj18/event-loop-model-javascript-6bef1ec8cc44
