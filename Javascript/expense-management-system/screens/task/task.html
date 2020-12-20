@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>tasks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div style="display: flow-root;">
+        <button type="submit" class="btn btn-primary float-right" onclick="logout()">Logout</button>
+      </div>
+        <div>
+            <h1 style="text-align: center">
+                <span>Add Task</span>
+            </h1>
+            <form onsubmit="addTask(event)">
+                <div class="form-group">
+                    <label class="control-label" for="description">Description:</label>
+                    <input type="text" class="form-control" id="description" placeholder="Enter Description"
+                        value="" data-field="description" required="">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="priority">Priority:</label>
+                    <select class="form-control" id="priority" data-field="priority" required="">
+                        <option value="">Select Task Priority</option>
+                        <option value="Low">Low</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class="d-flex flex-column">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="../../init-firebase.js"></script>
+    <script src="task.js"></script>
+  </body>
+</html>
