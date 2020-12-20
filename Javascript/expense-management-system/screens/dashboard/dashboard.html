@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div style="display: flow-root;">
+        <button type="submit" class="btn btn-primary float-right" onclick="logout()">Logout</button>
+      </div>
+      <div style="text-align: center">
+        <div>
+            <h2 id="userName" style="margin-bottom: 25px;"></h2>
+            <h1 style="margin-bottom: 25px;">All Tasks</h1>
+          <button class="btn btn-primary" onclick="addTask()">Add Task!</button>
+          <div class="row ">
+            <div class="col-md-4"></div>
+          </div>
+          <div class="table-responsive" id="expenses">
+            <table class="table table-bordered table-hover table-border">
+              <thead class="hover">
+                <tr>
+                    <th>Description</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody id="body">
+
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+        <script src="../../init-firebase.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script src="dashboard.js"></script>
+  </body>
+</html>
